@@ -1,4 +1,4 @@
-# projektzaw
+# README
 projekt
 GRUPA 4 osobowa 
 2F
