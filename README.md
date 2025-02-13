@@ -2,7 +2,7 @@
 projekt
 GRUPA 4 osobowa 
 2F
-Miłosz PRzybylski 
+Miłosz Przybylski 
 Szymon Zuska
 Zachariasz Bryła 
 Patryk Góralewicz
