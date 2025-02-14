@@ -11,7 +11,7 @@ TYTUŁ:Projekt Restauracji
 
 
 
-GŁÓWNY ZAMYSŁ:
+GŁÓWNY ZAMYSŁ:głównym zamysłem jest projekt restauracji z możliwością rezerwowania stołu oraz przęglądu menu, menu jak i rezerwacja bedą zapisywane w bazach danych w MYSQL, rezerwacja bedzię się odbywać w formie formularza na stronie HTML.
 
 
 
