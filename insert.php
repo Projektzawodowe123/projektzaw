@@ -1,5 +1,11 @@
 <?php
 
+//wyświetlanie wszystkich wysyłanych danych do pliku insert.php z formularza
+//print_r($_POST) pozwala na wyświetlenie tablicsuperglobalnych - A. Marciniak
+echo "<pre>";
+print_r($_POST);
+echo "</pre>";
+
 $host = 'localhost';
 $username = 'root';
 $password = '';
@@ -17,6 +23,7 @@ if ($conn->connect_error) {
 $numer_stolu = $_POST['stol']; // Numer stołu z formularza
 $nazwisko = $_POST['nazwisko']; // Nazwisko rezerwującego
 $data = $_POST['data']; // Data rezerwacji
+// echo $_POST; 
 
 // Przygotowanie zapytania SQL (upewnij się, że używasz odpowiednich nazw kolumn)
 $sql = "INSERT INTO `rezerwacja` (numer_stolu, Nazwisko_rezerwujacego, data_rezerwacji) VALUES (?, ?, ?)";
