@@ -1,0 +1,36 @@
+
+#body {
+    background-image: url("tlorezerwacji.jpg");
+    background-size: cover;
+}
+#naglowek {
+    font-size: 80px;
+    color: red;
+}
+#tabela {
+    color: black;
+    width: 700px;
+    height: 500px;
+    margin-left: 600px;
+    background-color: white;
+}
+#th, td {
+    font-size: 100px;
+    padding: 15px;
+}
+#N {
+    font-size: 50px;
+    color: black;
+}
+.wolny {
+    color: rgb(0, 250, 0);
+}
+.zajety {
+    color: red;
+}
+#form {
+    background-color: white;
+    margin-left: 600px;
+    margin-right: 600px;
+    font-size: 18px;
+}
