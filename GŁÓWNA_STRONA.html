@@ -1,70 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restauracja 2F</title>
-    <link href="https://fonts.google.com/share?selection.family=Pacifico"> <!--Import czcionki po linku-->
-    <!--Wygląd strony-->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
-        #body{ 
-         background-image: url("glownastronabackground.jpg"); /* scieżka do tła*/
-         background-size: cover; /* rozciąganie tła na całą stronę*/
+        #body {
+            background-image: url("glownastronabackground.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: 'Pacifico', cursive;
+            color: #fff;
         }
-        #naglowek{
-            color: red; /*Kolor tekstu*/
-            font-size: 80px; /*Rozmair tekstu*/
-            font-family:'Pacifico', cursive;/*Czcionka zaimportowana z google*/
+
+        #naglowek {
+            color: #b4b4b4;
+            font-size: 80px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+            margin-top: 50px;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            border: 2px solid #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.6);
         }
-        #naglowek2{
-            color: red; /*Kolor tekstu*/
-            font-size: 60px; /*Rozmair tekstu*/
-            font-family:'Pacifico', cursive;/*Czcionka zaimportowana z google*/
+
+        #naglowek2 {
+            color: #b4b4b4;
+            font-size: 60px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            margin-top: 30px;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            border: 2px solid #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.6);
         }
-        #opis{
-            color: rgb(255, 38, 0);
-            background-color: white;
+
+        #opis {
+            color: #a8a8a8;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 800px;
+            font-size: 20px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            margin: 50px auto;
+            border: 1px solid #ddd;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
-        #przyciskRR{
+
+        #przyciskRR, #przyciskMM {
+            width: 250px;
+            cursor: pointer;
+            border: none;
+            padding: 12px;
+            background-color: transparent;
+            color: #f1f1f1;
+            font-size: 20px;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        #przyciskRR:hover, #przyciskMM:hover {
+            color: #4e4e4e;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        #przyciskRR {
             margin-left: 200px;
         }
-        #przyciskMM{
+
+        #przyciskMM {
             margin-left: 1300px;
             position: relative;
-            top:-250px;
-            
+            top: -250px;
         }
-        
 
+        #contact-popup {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            width: 300px;
+            max-width: 100%;
+            display: none;
+            transition: all 0.5s ease-in-out;
+            z-index: 1000;
+        }
+
+        #contact-popup button {
+            background-color: #e63946;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #contact-popup button:hover {
+            background-color: #d42f2f;
+        }
+
+        #contact-popup .popup-content {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        #contact-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #e63946;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        #contact-btn:hover {
+            background-color: #d42f2f;
+        }
     </style>
 </head>
 <body id="body">
-   <center> <h1 id="naglowek">RESTAURACJA 2F</h1> </center>
-   <br><br><br><br><br><br><br> <br><br><br><br>
-   
-   
-   <img id="przyciskRR" src="przyciskdostronyrezerwacji.jpg" alt="przycisk" usemap="#przyciskR">
-   <map name="przyciskR">
-    <area shape="rect" coords="0,0,9999,9999" href="rezerwacja.html">
-   </map>
+    <center><h1 id="naglowek">RESTAURACJA 2F</h1></center>
+    <br><br><br><br><br><br><br><br><br><br>
 
+    <img id="przyciskRR" src="przyciskdostronyrezerwacji.jpg" alt="przycisk" usemap="#przyciskR">
+    <map name="przyciskR">
+        <area shape="rect" coords="0,0,9999,9999" href="rezerwacja.html">
+    </map>
 
-   <img id="przyciskMM" src="przyciskdostronymenu.jpg" alt="przycisk2" usemap="#przyciskM">
-   <map name="przyciskM">
-    <area shape="rect" coords="0,0,9999,9999" href="menu.html">
-   </map>
+    <img id="przyciskMM" src="przyciskdostronymenu.jpg" alt="przycisk2" usemap="#przyciskM">
+    <map name="przyciskM">
+        <area shape="rect" coords="0,0,9999,9999" href="menu.html">
+    </map>
 
+    <br><br><br><br><br><br><br><br><br><br>
 
+    <center id="naglowek2">OPIS NASZEJ RESTAURACJI</center>
+    <center>
+        <h1 id="opis">
+            Ekskluzywna 5-gwiazdkowa restauracja z wybitnymi daniami.<br>
+            Nasza restauracja jest w Top 10 restauracji w Polsce<br>
+            Od 1985 roku mamy wielu klientów i cały czas utrzymujemy wysoki poziom dań.
+        </h1>
+    </center>
 
+    <button id="contact-btn">Kontakt</button>
 
-   <br><br><br> <br><br><br><br><br><br><br>
-   
-   
-   <center id="naglowek2">OPIS NASZEJ RESTAURACJI </center>
-   <center><h1 id="opis">Ekskluzywa 5 gwiazdkowa restauracja z wybitnymi daniami.<br>
-    Nasza restauracja jest w Top 10 restauracji w Polsce<br> od 1985 roku mamy wielu klientów i cały czas wysoki poziom dań.
-   </h1></center>
+    <div id="contact-popup">
+        <div class="popup-content">
+            <p>Numer telefonu: <strong>+48 123456789</strong></p>
+            <p>Email: <strong>projektzste@gmail.com</strong></p>
+        </div>
+        <button onclick="togglePopup()">Zamknij</button>
+    </div>
 
-    
+    <script>
+        document.getElementById("contact-btn").addEventListener("click", togglePopup);
+
+        function togglePopup() {
+            var popup = document.getElementById("contact-popup");
+            if (popup.style.display === "block") {
+                popup.style.display = "none";
+            } else {
+                popup.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
