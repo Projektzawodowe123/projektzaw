@@ -4,43 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezerwacja</title>
-    <style>
-        #body {
-            background-image: url("tlorezerwacji.jpg");
-            background-size: cover;
-        }
-        #naglowek {
-            font-size: 80px;
-            color: red;
-        }
-        #tabela {
-            color: black;
-            width: 700px;
-            height: 500px;
-            margin-left: 600px;
-            background-color: white;
-        }
-        #th, td {
-            font-size: 100px;
-            padding: 15px;
-        }
-        #N {
-            font-size: 50px;
-            color: black;
-        }
-        .wolny {
-            color: rgb(0, 250, 0);
-        }
-        .zajety {
-            color: red;
-        }
-        #form {
-            background-color: white;
-            margin-left: 600px;
-            margin-right: 600px;
-            font-size: 18px;
-        }
-    </style>
+    <!-- /*
+    Pliki css, js i php powinno się rozdzielać
+    */ -->
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body id="body">
     <center><h1 id="naglowek">REZERWACJA STOŁU</h1></center>
@@ -77,15 +45,16 @@
     </table>
     <br><br><br><br>
 
-    <form action="C:\xampp\htdocs\Projekt na 2 półrocze\insert.php" method="post" id="form">
+    <form action="insert.php" method="POST" id="form">
         <label for="numer_stolu">Wybierz numer stołu</label>
         <br>
-        <input type="radio" name="stol" value="1" id="stol1" onclick="rezerwujStolik(1)"> Stół 1
-        <input type="radio" name="stol" value="2" id="stol2" onclick="rezerwujStolik(2)"> Stół 2
-        <input type="radio" name="stol" value="3" id="stol3" onclick="rezerwujStolik(3)"> Stół 3
-        <input type="radio" name="stol" value="4" id="stol4" onclick="rezerwujStolik(4)"> Stół 4
-        <input type="radio" name="stol" value="5" id="stol5" onclick="rezerwujStolik(5)"> Stół 5
-        <input type="radio" name="stol" value="6" id="stol6" onclick="rezerwujStolik(6)"> Stół 6
+        <!-- funkcja rezerwujStolik() blokowała wysyłanie danych o stoliku bo był on zajęty wykonaniem kodu JavaScript -->
+        <input type="radio" name="stol" value="1" id="stol1" > Stół 1
+        <input type="radio" name="stol" value="2" id="stol2" > Stół 2
+        <input type="radio" name="stol" value="3" id="stol3" > Stół 3
+        <input type="radio" name="stol" value="4" id="stol4" > Stół 4
+        <input type="radio" name="stol" value="5" id="stol5" > Stół 5
+        <input type="radio" name="stol" value="6" id="stol6" > Stół 6
         <br><br>
 
         <label for="nazwisko">Podaj nazwisko rezerwującego</label>
@@ -101,24 +70,6 @@
         <button type="submit">Zarezerwuj</button>
     </form>
 
-    <script>
-        // Funkcja rezerwująca stół
-        function rezerwujStolik(stol) {
-            // Zmiana koloru tekstu na czerwony (zajęty) w tabeli
-            var stan = document.getElementById("stan" + stol);
-            stan.classList.remove("wolny");
-            stan.classList.add("zajety");
-            stan.innerText = "Zajęty";
-
-            // Usunięcie opcji wyboru dla tego stolika
-            var radio = document.getElementById("stol" + stol);
-            radio.disabled = true;
-        }
-
-        // Funkcja do resetowania formularza, jeśli chcesz to dodać (możesz pominąć)
-        document.getElementById('form').onsubmit = function () {
-            alert("Twoja rezerwacja została przyjęta!");
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
