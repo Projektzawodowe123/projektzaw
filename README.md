@@ -4,7 +4,7 @@ GRUPA 4 osobowa
 2F
 Miłosz Przybylski (zrobione)
 Szymon Zuska (opis)
-Zachariasz Bryła (przycisk powrotu na stronie rezerwacja.php)
+Zachariasz Bryła (zrobione)
 Patryk Góralewicz (funkcja w js do zmiany napisu i koloru na  stronie rezerwacja.php)
 
 TYTUŁ:Projekt Restauracji
