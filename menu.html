@@ -3,81 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Menu - Restauracja 2F</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #2b2b2b;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        table {
+            width: 90%;
+            max-width: 1000px;
+            border-collapse: separate;
+            border-spacing: 0 10px;
+            background-color: #3a3a3a;
+            border-radius: 12px;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        th, td {
+            padding: 16px 20px;
+            text-align: center;
+            color: #f1f1f1;
+        }
+
+        th {
+            background-color: #1f1f1f;
+            color: #ffffff;
+            font-size: 1.1rem;
+        }
+
+        tr {
+            background-color: #4a4a4a;
+            border-radius: 8px;
+        }
+
+        tr:hover {
+            background-color: #5e5e5e;
+            transition: background-color 0.3s ease;
+        }
+
+        caption {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #e0e0e0;
+        }
+    </style>
 </head>
 <body>
-    <table border="5" id="tabela">
+    <table border="0" id="tabela">
+        <caption>Menu Restauracja 2F</caption>
         <tr>
-            <th id="N">Danie główne</th>
-            <th id="N">Cena</th>
-            <th id="N">Dodatki</th>
-            <th id="N">Cena</th>
-            <th id="N">Deser</th>
-            <th id="N">Cena</th>
-            <th id="N">Napoje</th>
-            <th id="N">Cena</th>
+            <th>Danie główne </th>
+            <th>Dodatki </th>
+            <th>Deser </th>
+            <th>Napoje </th>
         </tr>
         <tr>
-            <td>spaghetti bolognese</td>
-            <td>25zł</td>
-            <td>Frytki</td>
-            <td>5zł</td>
-            <td>Pudding</td>
-            <td>10zł</td>
-            <td>Cola</td>
-            <td>8zł</td>
+            <td>Spaghetti Bolognese (25zł)</td>
+            <td>Frytki (5zł)</td>
+            <td>Pudding (10zł)</td>
+            <td>Cola (8zł)</td>
         </tr>
         <tr>
-            <td>Lasagna</td>
-            <td>35zł</td>
-            <td>Marchewka</td>
-            <td>3zł</td>
-            <td>Pudding czekolada</td>
-            <td>15zł</td>
-            <td>Fanta</td>
-            <td>7zł</td>
+            <td>Lasagna (35zł)</td>
+            <td>Marchewka (3zł)</td>
+            <td>Pudding czekoladowy (15zł)</td>
+            <td>Fanta (7zł)</td>
         </tr>
         <tr>
-            <td>Carbonara</td>
-            <td>20zł</td>
-            <td>Orzechy</td>
-            <td>2zł</td>
-            <td>lody czeko.</td>
-            <td>8zł</td>
-            <td>Pepsi</td>
-            <td>9zł</td>
+            <td>Carbonara (20zł)</td>
+            <td>Orzechy (2zł)</td>
+            <td>Lody czekoladowe (8zł)</td>
+            <td>Pepsi (9zł)</td>
         </tr>
         <tr>
-            <td>Pizza Margherita</td>
-            <td>30zł</td>
-            <td>ser</td>
-            <td>5zł</td>
-            <td>lody trus.</td>
-            <td>8zł</td>
-            <td>Sprite</td>
-            <td>7zł</td>
+            <td>Pizza Margherita (30zł)</td>
+            <td>Ser (5zł)</td>
+            <td>Lody truskawkowe (8zł)</td>
+            <td>Sprite (7zł)</td>
         </tr>
         <tr>
-            <td>Pizza Classic</td>
-            <td>30zł</td>
-            <td>surówka</td>
-            <td>7zł</td>
-            <td>lody wani.</td>
-            <td>8zł</td>
-            <td>Woda</td>
-            <td>4zł</td>
+            <td>Pizza Classic (30zł)</td>
+            <td>Surówka (7zł)</td>
+            <td>Lody waniliowe (8zł)</td>
+            <td>Woda (4zł)</td>
         </tr>
         <tr>
-            <td>Arancini</td>
-            <td>15zł</td>
-            <td>buraki</td>
-            <td>7zł</td>
-            <td>lody 3 smaki.</td>
-            <td>23zł</td>
-            <td>sok pom.</td>
-            <td>6zł</td>
+            <td>Arancini (15zł)</td>
+            <td>Buraki (7zł)</td>
+            <td>Lody 3 smaki (23zł)</td>
+            <td>Sok pomarańczowy (6zł)</td>
         </tr>
     </table>
-    
 </body>
 </html>
