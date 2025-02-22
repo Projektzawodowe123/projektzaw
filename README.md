@@ -2,10 +2,10 @@
 projekt
 GRUPA 4 osobowa 
 2F
-Miłosz Przybylski 
-Szymon Zuska
-Zachariasz Bryła 
-Patryk Góralewicz
+Miłosz Przybylski (zrobione)
+Szymon Zuska (opis)
+Zachariasz Bryła (przycisk powrotu na stronie rezerwacja.php)
+Patryk Góralewicz (funkcja w js do zmiany napisu i koloru na  stronie rezerwacja.php)
 
 TYTUŁ:Projekt Restauracji
 
@@ -16,7 +16,8 @@ GŁÓWNY ZAMYSŁ:głównym zamysłem jest projekt restauracji z możliwością r
 
 
 JĘZYKI PROGRAMOWANIA:
-HTML
-CSS
-JS
-PHP
+HTML Miłosz,Patryk,Zachariasz,Szymon
+CSS Zachariasz
+JS Patryk
+PHP Miłosz
+OPIS Szymon
