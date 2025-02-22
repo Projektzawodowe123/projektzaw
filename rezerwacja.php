@@ -132,6 +132,13 @@
         <label for="data">Podaj datę rezerwacji</label>
         <input type="date" name="data" id="data">
         <button type="submit">Zarezerwuj</button>
+        <br><br><br><br><br><br><br><br><br>
+
+        <center><img id="przyciskP" src="przyciskdopowrotu.jpg" alt="przycisk2" usemap="#przyciskM"></center>
+    <map name="przyciskM">
+        <area shape="rect" coords="0,0,9999,9999" href="GŁÓWNA_STRONA.html">
+    </map>
+
     </form>
     <script>
         // Funkcja rezerwująca stół
