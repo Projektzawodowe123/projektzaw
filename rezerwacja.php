@@ -81,7 +81,7 @@
 </head>
 <body id="body">
     <center><h1 id="naglowek">REZERWACJA STOŁU</h1></center>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
     <table border="5" id="tabela">
         <tr>
             <th id="N">Numer Stołu</th>
@@ -132,7 +132,8 @@
         <label for="data">Podaj datę rezerwacji</label>
         <input type="date" name="data" id="data">
         <button type="submit">Zarezerwuj</button>
-        <br><br><br><br><br><br><br><br><br>
+        <button type="reset">Resetuj</button>
+        <br><br><br><br><br><br><br>
 
         <center><img id="przyciskP" src="przyciskdopowrotu.jpg" alt="przycisk2" usemap="#przyciskM"></center>
     <map name="przyciskM">
@@ -149,15 +150,19 @@
             stan.classList.add("zajety");
             stan.innerText = "Zajęty";
             // Usunięcie opcji wyboru dla tego stolika
-            var radio = document.getElementById("stol" + stol);
-            radio.disabled = true;
+            if (stan.classList.contains("zajety")) 
+            {
+            document.getElementById("stol" + stol).disabled = true;
+            stan.style.color = "rgb(255, 0, 0)";
+            }
         }
         // Funkcja do resetowania formularza, jeśli chcesz to dodać (możesz pominąć)
         document.getElementById('form').onsubmit = function () {
             alert("Twoja rezerwacja została przyjęta!");
         }
+        document.getElementById("form").onreset = function (){
+            alert("Formularz został zresetowany")
+        }
     </script>
-    <script src="scripts.js"></script>
-
 </body>
 </html>

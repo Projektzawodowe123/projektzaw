@@ -5,7 +5,7 @@ GRUPA 4 osobowa
 Miłosz Przybylski 
 Szymon Zuska
 Zachariasz Bryła 
-Patryk Góralewicz
+Patrick Góralewicz
 
 TYTUŁ: Projekt Restauracji
 

@@ -5,7 +5,7 @@ GRUPA 4 osobowa
 Miłosz Przybylski (zrobione)
 Szymon Zuska (opis)
 Zachariasz Bryła (zrobione)
-Patryk Góralewicz (funkcja w js do zmiany napisu i koloru na  stronie rezerwacja.php)
+Patrick Góralewicz (zrobione)
 
 TYTUŁ:Projekt Restauracji
 
