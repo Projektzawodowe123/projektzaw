@@ -19,12 +19,12 @@
 
     .dih {
         background-color: #2a2a2a;
-        border: 2px solid #00cc66;
+        border: 2px solid rgb(194, 56, 236);
         border-radius: 10px;
         padding: 40px 30px;
         max-width: 500px;
         width: 100%;
-        box-shadow: 0 0 15px rgba(0, 204, 102, 0.4);
+        box-shadow: 0 0 15px rgba(160, 4, 152, 0.4);
         text-align: center;
         animation: fadeIn 1s ease-in-out;
     }
@@ -32,13 +32,13 @@
     h1 {
         font-size: 2em;
         margin-bottom: 20px;
-        color: #00ff88;
+        color:rgb(245, 95, 212);
     }
 
     h2 {
         font-size: 1.2em;
         margin-bottom: 25px;
-        color: #aaffcc;
+        color:rgb(221, 67, 208);
     }
 
     h3 {
@@ -47,7 +47,7 @@
         padding: 12px 20px;
         border-radius: 6px;
         border: 1px solid #00cc66;
-        color: #b9ffdf;
+        color:rgb(238, 61, 229);
         margin-top: 20px;
         display: inline-block;
     }
