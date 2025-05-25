@@ -5,17 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Potwierdzenie</title>
     <style>
-        body {
-            background-color: black;
-            color: lime;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            padding-top: 100px;
+    body {
+        background-color: #1a1a1a;
+        color: #ffffff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .dih {
+        background-color: #2a2a2a;
+        border: 2px solid #00cc66;
+        border-radius: 10px;
+        padding: 40px 30px;
+        max-width: 500px;
+        width: 100%;
+        box-shadow: 0 0 15px rgba(0, 204, 102, 0.4);
+        text-align: center;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #00ff88;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin-bottom: 25px;
+        color: #aaffcc;
+    }
+
+    h3 {
+        font-size: 1.1em;
+        background-color: #003322;
+        padding: 12px 20px;
+        border-radius: 6px;
+        border: 1px solid #00cc66;
+        color: #b9ffdf;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0.1; transform: translateY(-15px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+        .dih {
+            padding: 30px 20px;
         }
-    </style>
+
+        h1 {
+            font-size: 1.5em;
+        }
+
+        h2 {
+            font-size: 1em;
+        }
+
+        h3 {
+            font-size: 1em;
+        }
+    }
+</style>
+
+
 </head>
 <body>
-
+<div class="dih">
 <h1>Dziękujemy za rezerwację stołu!</h1>
 <h2>Za 5 sekund zostaniesz przeniesiony na główną stronę</h2>
 
@@ -67,6 +131,6 @@ setTimeout(function(){
     window.location.href = "GŁÓWNA_STRONA.html"; 
 }, 5000);
 </script>
-
+</div> 
 </body>
 </html>
